@@ -4,8 +4,6 @@ ini_set('display_errors', 1);
 
 spl_autoload_register(function ($nameClass) {
 
-	var_dump($nameClass);
-
 	$dirClass = 'class';
 	$filename = $dirClass . DIRECTORY_SEPARATOR . str_replace('\\', DIRECTORY_SEPARATOR, $nameClass) . '.php';
 //	$filename = $dirClass . DIRECTORY_SEPARATOR . $nameClass . '.php';

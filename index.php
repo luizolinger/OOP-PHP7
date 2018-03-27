@@ -15,6 +15,7 @@ $cad->registrarVenda();
 // echo $cad;
 */
 
+/*
 echo Cadastro::versao();
 
 use Fornecedor\Cadastro;
@@ -27,5 +28,11 @@ $cad->setSenha('abc123');
 
 
 $cad->registrarCompra();
+*/
+
+$bd = new BaseDado();
+$retorno = $bd->select('SELECT usuario, senha FROM fin_usuarios');
+print_r($retorno);
+
 
  ?>
